@@ -1,0 +1,93 @@
+@import-normalize;
+
+:root {
+  --main-color: #d3d8d5;
+  --secondary-color: #645d55;
+  --bg-color: #151320;
+  --accent-color: #ffa229;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.phonebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .phonebook {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 321px) {
+  .phonebook {
+    display: flex;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .phonebook {
+    display: flex;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .phonebook {
+    display: flex;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .phonebook {
+    display: flex;
+    width: 1200px;
+  }
+}
+
+.phonebook__title {
+  color: var(--accent-color);
+}
+
+.phonebook__subtitle {
+  color: var(--accent-color);
+}
